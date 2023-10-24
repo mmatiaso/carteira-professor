@@ -14,13 +14,17 @@
     <style type="text/css">
         body {
             background: url("fundo-img-carteirinha.jpg");
+            padding: 10px;
+            margin: 0 auto;
         }
     </style>
 </head>
 
 <body>
     <script type="text/javascript">
-
+        function Return() {
+            window.location.href = "index.html";
+        }
 
         function showhide(modal1) {
             // show Modal 
@@ -33,6 +37,10 @@
             showhide(theModal);
         });
     </script>
+    <div>
+        <button type="button" class="btn btn-primary" onclick="Return()">
+            << Voltar para a busca</button>
+    </div>
     <div class="modal" id="myModal" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -48,8 +56,7 @@
 
                         Nascimento: <strong>02/01/1980</strong><br />
 
-                        Instituição de Ensino: <strong>FACULDADES INTEGRADAS HÉLIO
-                            ALONSO</strong><br />
+                        Instituição de Ensino: <strong>UNIVERSIDADE FEDERAL DO RIO DE JANEIRO - UFRJ</strong><br />
 
                         Data de Emissão: <strong>08/01/2023</strong><br />
 
