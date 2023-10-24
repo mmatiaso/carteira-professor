@@ -29,7 +29,8 @@
     <script type="text/javascript">
         function gotoResult() {
             var codigo = document.getElementById("myInput").value;
-            if (codigo == "BRA-RJ4556" || codigo == "BRA-RJ455667") {
+            codigo = codigo.toUpperCase();
+            if (codigo == "BRA-RJ4556" || codigo == "BRA-RJ455667" || codigo == "455667" || codigo == "RJ455667") {
                 window.location.href = "registro-455667.html";
             } else {
                 document.getElementById("mensagem").innerHTML = "Código inválido";
